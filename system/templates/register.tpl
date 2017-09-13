@@ -67,5 +67,34 @@
             	<input  id="tel" type="text" name="tel" onblur="javascript:chktel(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'" />&nbsp;<font color="red">*</font></td>
              <td height="25"><div id="tel1"><font color="#999999">请输入移动电话</font></div></td>
         </tr>
+        
+        <tr>
+        	<td height="25"><div align="right">固定电话: </div></td>
+            <td height="25" colspan="3">&nbsp;
+            	<input id="phone" type="text" name="phone" onblur="javascript:chkphone(register)" onmouseover="this.style.backgroundColor='#ffffff'"  onmouseout="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="red">*</font>
+            </td>
+			<td height="25"><div id="phone1"><font color="#999999">请输入固定电话</font></div></td>        
+        </tr>
+        
+        <tr>
+        	<td height="25"><div align="right">QQ号码: </div></td>
+            <td height="25" colspan="3">&nbsp;
+            	<input id="qq" type="text" name="qq" onblur="javascript:chkqq(register)" onmouseover="this.style.backgroundColor='#ffffff'"  onmouseout="this.style.backgroundColor='#e8f4ff'"/></td>
+            <td height="25"><div id="qq1"><font color="#999999">请输入QQ号</font></div></td>
+        </tr>
+        
+        <tr>
+        	<td height="25"><div align="right">E-mail: </div></td>
+            <td height="25" colspan="3">&nbsp;
+            	<input id="email" type="text" name="email" onblur="javascript:chkemail(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'" /></td>
+            <td height="25"><div id="email1"><font color="#999999">请输入Email</font></div></td>
+        </tr>
+        
+        <tr>
+        	<td height="25"><div align="right">邮&nbsp;&nbsp;编</div></td>
+            <td height="25" colspan="3">&nbsp;
+            	<input id="code" type="text" name="code" onblur="javascript:chkcode(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'"/></td>
+            <td height="25"><div id="code1"><font color="#999999">请输入邮编</font></div></td>
+        </tr>
     </form>
 </table>
