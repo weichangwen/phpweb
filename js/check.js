@@ -155,7 +155,7 @@ function chkpwd2(form){
 		pwd21.innerHTML="<font>请输入确认密码!</font>";
 	}else if(form.pwd2.value.length<6){
 		pwd21.innerHTML="<font color=#FF0000>确认密码长度应大于6位！</font>";
-	}else if(){
+	}else if(form.pwd1.value!=form.pwd2.value){
 		pwd21.innerHTML = "<font color=#FF0000>注册密码与确认密码不同!</font>";	
 	}else{
 		pwd21.innerHTML="<font color=green></font>";	
