@@ -96,5 +96,32 @@
             	<input id="code" type="text" name="code" onblur="javascript:chkcode(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'"/></td>
             <td height="25"><div id="code1"><font color="#999999">请输入邮编</font></div></td>
         </tr>
+        
+        <tr>
+        	<td height="25"><div align="right">联系地址: </div></td>
+            <td height="25" colspan="3">&nbsp;
+            	<input id="address" type="text" name="address" onblur="javascript:chkaddress(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="red">*</font></td>
+            <td  height="25"><div id="address1"><font color="#999999">请输入联系地址</font></div></td>
+        </tr>
+        
+        <tr>
+            <td height="25"><div align="right">验证码: </div></td>
+            <td width="77" height="25">&nbsp;
+            	<input id="yzm" type="text" name="yzm" size="8" onblur="javascript:chkyzm(register)" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#e8f4ff'"/>
+                <input name="yzm2" type="hidden" value="" />
+            </td>
+            <td width="82" align="center" valign="middle"><script>yzm(register)</script></td>
+            <td width="63"><a href="javascript:code(register)">看不清</a></td>
+            <td height="25"><div id="yzm1"><font color="#999999">输入验证码</font></div></td>
+        </tr>
+        
+        <tr>
+        	<td height="49" colspan="2">&nbsp;
+            	<input type="submit" value="提交" />
+                &nbsp;&nbsp;
+                <input  type="reset" value="重写"/>
+            </td>
+            <td height="49" colspan="3"><div style="color:#FF0000">带"*"号的为必填项</div></td>           
+        </tr>
     </form>
 </table>
