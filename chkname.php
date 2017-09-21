@@ -5,7 +5,7 @@
 	$reback = '0';
 	$sql = "select * from tb_user where name='".$_GET['user']."'";
 	if(isset($_GET['password'])){
-		$sql . = " and password = '".md5($_GET['password'])"'";	
+		$sql .= " and password = '".md5($_GET['password'])."'";
 	}
 	$rst = $admindb->ExecSQL($sql, $conn);
 	if($rst){

@@ -7,8 +7,9 @@
     </tr>
     
     <tr>
-  		  <td height="25"></td>
-          <td></td>
+  		  <td height="25" align="right">用户名: </td>          
+          <td ></td>
     </tr>
 </form> 
 </table>
+{/if}
