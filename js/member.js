@@ -67,6 +67,10 @@ function pwd(form) {
     if(form.new1.value == ""){
         alert("请填写新密码");
         form.new1.focus();
-
+    }
+    if(form.new1.value != form.new2.value){
+        alert('两次密码不相等');
+        form.new2.focus();
+        return false;
     }
 }
