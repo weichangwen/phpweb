@@ -65,8 +65,5 @@ function lg(form) {
     function found() {
         window.open("found.php", "_blank","width=350 height=240",false);
     }
-
-
-
 }
 

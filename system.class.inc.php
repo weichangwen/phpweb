@@ -88,12 +88,20 @@ class SepPage{
 		$pagecount=ceil($record/$this->pagesize);
 		$str.=$contentname."&nbsp;".$record."&nbsp;".$utits."&nbsp;每页 &nbsp;".$this->pagesize."&nbsp;".$utits."&nbsp;第&nbsp;".$this->rs->AbsolutePage()."&nbsp;页/共&nbsp;".$pagecount."&nbsp;页";
 		$str.="&nbsp;&nbsp;&nbsp;&nbsp;";
-		if(!$this->rs->AtFirstPage())
+		/*if(!$this->rs->AtFirstPage())
 			$str.="<a href=".$_SERVER['PHP_SELF']."?page=".($this->rs->AbsolutePage()-1)."&parameter1=".$anothersearchstrs."class=".$class.">首页</a>";
 		else
 			$str.="<font color='#555555'>首页</font>";
 		$str.="&nbsp;";
-		if(!$this->rs->AtFirstPage())
+		if(!$this->rs->AtFirstPage())*/
+		if($this->nowpage != 1){
+            $str.="<a href=".$_SERVER['PHP_SELF']."?page=".($this->nowpage+1)."&page_type=1&page_type=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class.">首页</a>";
+        }
+        else
+             $str.="<font color='#555555'>首页</font>";
+        $str.="&nbsp";
+        if($this->nowpage!=1)
+            $str.="<a href=""></a>";
 		
 		
 	}
