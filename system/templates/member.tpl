@@ -83,7 +83,23 @@
                 <td height="25" align="left" valign="middle" id="right"><input id="phone" name="phone" type="text" value="{$pwdarr[pwd_id].phone}" />&nbsp;<font color="red">*</font></td>
             </tr>
             <tr>
-                <td width="25%" height="25"></td>
+                <td width="25%" height="25" align="right" valign="middle" id="left">Email:</td>
+                <td height="25" align="left" valign="middle" id="right"><input id="email" type="text" value="{$pwdarr[pwd_id]}.Email"></td>
+            </tr>
+            <tr>
+                <td width="25%" height="25" align="right" valign="middle" id="left">QQ号:</td>
+                <td height="25" align="left" valign="middle" id="right"><input id="qq" name="qq" type="text" value="{$pwdarr[pwd_id].QQ}"/></td>
+            </tr>
+            <tr>
+                <td width="25%" height="25" align="right" valign="middle" id="left">邮编:</td>
+                <td height="25" align="left" valign="middle" id="right"><input id="code" name="code" type="text" value="{$pwdarr[pwd_id].code}"/></td>
+            </tr>
+            <tr>
+                <td width="25%" height="25" align="right" valign="middle" id="left">地址:</td>
+                <td height="25" align="left" valign="middle" id="right"><input id="address" name="address" type="text" value="{$pwdarr[pwd_id].address}"/></td>
+            </tr>
+            <tr>
+                <td height="30" colspan="2" align="center" valign="middle"><input name="enter" type="submit" id="enter" value="修改"/>&nbsp;&nbsp;&nbsp;&nbsp;<input name="reset" type="reset" id="reset" value="重置"/></td>
             </tr>
         </form>
     </table>
