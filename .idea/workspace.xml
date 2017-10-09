@@ -77,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newhot.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newhot.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/templates/newhot.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
@@ -87,44 +87,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chkname.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chkname.php">
+      <file leaf-file-name="showcommo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/showcommo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-              <folding>
-                <marker date="1505978385085" expanded="true" signature="134:186" ph="select * fro... tb_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="found.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/found.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="333">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundpwd.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foundpwd.php">
+      <file leaf-file-name="myshopcar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myshopcar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="499">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <marker date="1506397698409" expanded="true" signature="287:323" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="287:341" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="545:581" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="545:599" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="545:614" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="545:634" ph="select * fro... tb_user" />
-                <marker date="1506397698409" expanded="true" signature="790:819" ph="update tb_us... " />
-                <marker date="1506397698409" expanded="true" signature="790:846" ph="update tb_us... " />
-                <marker date="1506397698409" expanded="true" signature="790:859" ph="update tb_us... " />
-                <marker date="1506397698409" expanded="true" signature="790:877" ph="update tb_us... " />
+                <marker date="1507534604695" expanded="true" signature="96:143" ph="select id ,s... tb_user" />
+                <marker date="1507534604695" expanded="true" signature="96:167" ph="select id ,s... tb_user" />
+                <marker date="1507534604695" expanded="true" signature="517:566" ph="select id,na... tb_commo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myshopcar.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/templates/myshopcar.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <folding>
+                <element signature="e#332#338#1#HTML" expanded="true" />
+                <element signature="e#1232#1238#1#HTML" expanded="true" />
+                <element signature="e#1576#1582#1#HTML" expanded="true" />
+                <element signature="e#1707#1713#1#HTML" expanded="true" />
+                <element signature="e#1835#1841#1#HTML" expanded="true" />
+                <element signature="e#1960#1966#1#HTML" expanded="true" />
+                <element signature="e#2227#2233#0#HTML" expanded="true" />
+                <element signature="e#2233#2239#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#form#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#2362#2368#0#HTML" expanded="true" />
+                <element signature="e#2368#2374#0#HTML" expanded="true" />
+                <element signature="e#2888#2894#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +178,8 @@
         <option value="$PROJECT_DIR$/system/templates/newhot.tpl" />
         <option value="$PROJECT_DIR$/chklogin.php" />
         <option value="$PROJECT_DIR$/newhot.php" />
+        <option value="$PROJECT_DIR$/myshopcar.php" />
+        <option value="$PROJECT_DIR$/system/templates/myshopcar.tpl" />
       </list>
     </option>
   </component>
@@ -185,10 +191,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
-    <option name="y" value="61" />
-    <option name="width" value="1122" />
-    <option name="height" value="716" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -379,18 +385,18 @@
       <workItem from="1506568646157" duration="6270000" />
       <workItem from="1506651060186" duration="16948000" />
       <workItem from="1506761233247" duration="1029000" />
-      <workItem from="1507515096445" duration="4747000" />
+      <workItem from="1507515096445" duration="12703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47117000" />
+    <option name="totallyTimeSpent" value="55073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="61" width="1122" height="716" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1880651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -425,32 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/found.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foundpwd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <marker date="1506397698409" expanded="true" signature="287:323" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="287:341" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="545:581" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="545:599" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="545:614" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="545:634" ph="select * fro... tb_user" />
-            <marker date="1506397698409" expanded="true" signature="790:819" ph="update tb_us... " />
-            <marker date="1506397698409" expanded="true" signature="790:846" ph="update tb_us... " />
-            <marker date="1506397698409" expanded="true" signature="790:859" ph="update tb_us... " />
-            <marker date="1506397698409" expanded="true" signature="790:877" ph="update tb_us... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/found.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -743,14 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/showcommo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chklogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -866,6 +838,47 @@
         <state relative-caret-position="283">
           <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/showcommo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshopcar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <marker date="1507534604695" expanded="true" signature="96:143" ph="select id ,s... tb_user" />
+            <marker date="1507534604695" expanded="true" signature="96:167" ph="select id ,s... tb_user" />
+            <marker date="1507534604695" expanded="true" signature="517:566" ph="select id,na... tb_commo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/templates/myshopcar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="e#332#338#1#HTML" expanded="true" />
+            <element signature="e#1232#1238#1#HTML" expanded="true" />
+            <element signature="e#1576#1582#1#HTML" expanded="true" />
+            <element signature="e#1707#1713#1#HTML" expanded="true" />
+            <element signature="e#1835#1841#1#HTML" expanded="true" />
+            <element signature="e#1960#1966#1#HTML" expanded="true" />
+            <element signature="e#2227#2233#0#HTML" expanded="true" />
+            <element signature="e#2233#2239#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#form#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="e#2362#2368#0#HTML" expanded="true" />
+            <element signature="e#2368#2374#0#HTML" expanded="true" />
+            <element signature="e#2888#2894#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
