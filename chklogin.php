@@ -16,5 +16,49 @@ require("system/system.inc.php");
  *  5表示没有商品添加
  */
 $reback = '0';
-
+if(empty($_SESSION['member'])){
+    $reback = '2';
+}else {
+    $key = $_GET['key'];
+    if ($key == '') {
+        $reback = '5';
+    } else {
+        $boo = false;
+        $sqls = "select id, shopping from tb_user where name = '" . $_SESSION['member'] . "'";
+        $shopcont = $admindb->ExecSQL($sqls, $conn);
+        if (!empty($shopcont[0]['shopping'])) {
+            $arr = explode('@', $shopcont[0]);
+            foreach ($arr as $value) {
+                $arrtmp = explode(',', $value);
+                if ($key == $arrtmp[0]) {
+                    $reback = '3';
+                    $boo = true;
+                    break;
+                }
+            }
+            if ($boo == false) {
+                $shopcont[0]['shopping'] .= '@' . $key . ',1';
+                $update = "update tb_user set shopping='" . $arrtmp . "' where name = '" . $_SESSION['member'] . "'";
+                $result = $admindb->ExecSQL($updates, $conn);
+                if ($result) {
+                    $reback = 1;
+                } else {
+                    $reback = '4';
+                }
+            }
+        }else{
+            $tmparr = $key.",1";
+            $updates = "update tb_user set shopping='".$tmparr."' where name = '".$_SESSION['member']."'";
+            $result = $admindb->ExecSQL($updates, $conn);
+            if($result){
+                $reback = 1;
+            }else{
+                $reback = '4';
+            }
+        }
+    }
+}
+echo $reback;
 ?>
+
+
