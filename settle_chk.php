@@ -28,7 +28,18 @@ if($number >1){
         $addsql = "update tb_commo set sell = '".$tmpsell."' where id = '".$tmpid[$i]."'";
         $addrst = $admindb->ExecSQL($addsql,$conn);
     }
-    $sql .= "'".$formid."','".$_POST['fst']."', '".implode(',',$tmpna)."','".$_POST['snd']."','".implode(',',$tmpvp)."','".implode(',',$tmpfd)."'";
+    $sql .= "'".$formid."','".$_POST['fst']."', '".implode(',',$tmpna)."','".$_POST['snd']."','".implode(',',$tmpvp)."','".implode(',',$tmpfd)."','".$tmptt."','".$_POST['uid']."'";
+}else if($number == 1){
+    $tmpsql = "select name,v_price,fold from tb_commo where id = '".$tmpid[0]."'";
+    $tmprst = $admindb->ExecSQL($tmpsql,$conn);
+    $tmptt = $tmprst[0]['v_price']*$tmpnm[0];
+    @$tmpsell = $tmprst[0]['sell']+1;
+    $addsql = "update tb_commo set sell = '".$tmpsell."' where id = '".$tmpid[0]."'";
+    $addrst = $admindb->ExecSQL($addsql,$conn);
+    $sql.="'".$formid."','".$_POST['fst']."','".$tmprst[0]['name']."','"$_POST['snd']"','".$tmprst[0]['v_price']."','".$tmprst[0]['fold']."','".$tmptt."','".$_POST['uid']."'";
+}else{
+    echo 'error';
+    exit();
 }
 
 

@@ -115,16 +115,22 @@
       <file leaf-file-name="settle_chk.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settle_chk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="677">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
               <folding>
-                <marker date="1507704305819" expanded="true" signature="176:327" ph="insert into tb_form... " />
-                <marker date="1507704305819" expanded="true" signature="579:630" ph="select name,... tb_commo" />
-                <marker date="1507704305819" expanded="true" signature="579:645" ph="select name,... tb_commo" />
-                <marker date="1507704305819" expanded="true" signature="941:969" ph="update tb_co... " />
-                <marker date="1507704305819" expanded="true" signature="941:982" ph="update tb_co... " />
-                <marker date="1507704305819" expanded="true" signature="941:995" ph="update tb_co... " />
-                <marker date="1507704305819" expanded="true" signature="941:1010" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="176:327" ph="insert into tb_form... " />
+                <marker date="1507779318626" expanded="true" signature="579:630" ph="select name,... tb_commo" />
+                <marker date="1507779318626" expanded="true" signature="579:645" ph="select name,... tb_commo" />
+                <marker date="1507779318626" expanded="true" signature="941:969" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="941:982" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="941:995" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="941:1010" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="1291:1342" ph="select name,... tb_commo" />
+                <marker date="1507779318626" expanded="true" signature="1291:1356" ph="select name,... tb_commo" />
+                <marker date="1507779318626" expanded="true" signature="1506:1534" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="1506:1547" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="1506:1560" ph="update tb_co... " />
+                <marker date="1507779318626" expanded="true" signature="1506:1574" ph="update tb_co... " />
               </folding>
             </state>
           </provider>
@@ -221,10 +227,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="169" />
-    <option name="y" value="72" />
-    <option name="width" value="1199" />
-    <option name="height" value="716" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -415,18 +421,18 @@
       <workItem from="1506568646157" duration="6270000" />
       <workItem from="1506651060186" duration="16948000" />
       <workItem from="1506761233247" duration="1029000" />
-      <workItem from="1507515096445" duration="31770000" />
+      <workItem from="1507515096445" duration="36496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74140000" />
+    <option name="totallyTimeSpent" value="78866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="169" y="72" width="1199" height="716" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17582418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -930,16 +936,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settle_chk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="677">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
           <folding>
-            <marker date="1507704305819" expanded="true" signature="176:327" ph="insert into tb_form... " />
-            <marker date="1507704305819" expanded="true" signature="579:630" ph="select name,... tb_commo" />
-            <marker date="1507704305819" expanded="true" signature="579:645" ph="select name,... tb_commo" />
-            <marker date="1507704305819" expanded="true" signature="941:969" ph="update tb_co... " />
-            <marker date="1507704305819" expanded="true" signature="941:982" ph="update tb_co... " />
-            <marker date="1507704305819" expanded="true" signature="941:995" ph="update tb_co... " />
-            <marker date="1507704305819" expanded="true" signature="941:1010" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="176:327" ph="insert into tb_form... " />
+            <marker date="1507779318626" expanded="true" signature="579:630" ph="select name,... tb_commo" />
+            <marker date="1507779318626" expanded="true" signature="579:645" ph="select name,... tb_commo" />
+            <marker date="1507779318626" expanded="true" signature="941:969" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="941:982" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="941:995" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="941:1010" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="1291:1342" ph="select name,... tb_commo" />
+            <marker date="1507779318626" expanded="true" signature="1291:1356" ph="select name,... tb_commo" />
+            <marker date="1507779318626" expanded="true" signature="1506:1534" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="1506:1547" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="1506:1560" ph="update tb_co... " />
+            <marker date="1507779318626" expanded="true" signature="1506:1574" ph="update tb_co... " />
           </folding>
         </state>
       </provider>
