@@ -36,10 +36,20 @@ if($number >1){
     @$tmpsell = $tmprst[0]['sell']+1;
     $addsql = "update tb_commo set sell = '".$tmpsell."' where id = '".$tmpid[0]."'";
     $addrst = $admindb->ExecSQL($addsql,$conn);
-    $sql.="'".$formid."','".$_POST['fst']."','".$tmprst[0]['name']."','"$_POST['snd']"','".$tmprst[0]['v_price']."','".$tmprst[0]['fold']."','".$tmptt."','".$_POST['uid']."'";
+    $sql.="'".$formid."','".$_POST['fst']."','".$tmprst[0]['name']."','".$_POST['snd']."','".$tmprst[0]['v_price']."','".$tmprst[0]['fold']."','".$tmptt."','".$_POST['uid']."'";
 }else{
     echo 'error';
     exit();
+}
+$sql.=",'".$_POST['taker']."','".$_POST['address']."','".$_POST['tel']."','".$_POST['code']."','".$_POST['pay']."','".$_POST['del']."','".data("Y-m-d H:i:s")."',0";
+$InsertSQL = $admindb->ExecSQL($sql,$conn);
+if(false == $InsertSQL){
+    echo "<script>alert('购买失败');history.back;</script>";
+}else{
+    $updsql = "update tb_user set consume='".$tmptt."',shopping='where name = '".$_POST['uid']."'";
+    $updrst = $admindb->ExecSQL($updsql,$conn);
+    echo "<script>top.opener.location.reload();</script>";
+    echo "<script>open('forminfo.php?fid=$formid','_blank','width=750 height=650',false);window.close();</script>";
 }
 
 
