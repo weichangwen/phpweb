@@ -8,7 +8,13 @@
 <frameset rows="113,*,100" cols="1004" frameborder="no" border="0" framespacing="0">
     <frame src="top.php" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame"/>
     <frameset row="*" cols="10%,210,*,10%" framespacing="0" frameborder="no" border="0">
-        <frame src="s.php" name="lFrame" frameborder="0" srolling="auto" noresize="noresize" id="rFrame" title="leftFrame"/>
+        <frame src="s.php" name="lFrame" frameborder="0" srolling="auto" noresize="noresize" id="lFrame" title="leftFrame"/>
+            <frame src="left.php" name="leftFrame" frameborder="0" scrolling="auto" noresize="noresize" id="leftFrame" title="leftFrame" />
+            <frame src="default.php" name="mainFrame" id="mainFrame" title="mainFrame" />
+    <frame src="s.php" name="rFrame" frameborder="0" scrolling="auto" noresize="noresize" id="rFrame" title="leftFrame" />
     </frameset>
-</frameset>
+    <frame src="bottom.php" name="bottomFrame" scrolling="No" noresize="noresize" id="bottomFrame" title="bottomFrame" />
+    </frameset>
+    <noframes><body>
+    </body></noframes>
 </html>
