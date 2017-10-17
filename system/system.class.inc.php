@@ -86,7 +86,7 @@ class SepPage{
 		$allrs = $this->conn->Execute($this->sqlstr);
 		$record = count($allrs->GetRows());
 		$pagecount=ceil($record/$this->pagesize);
-		$str.=$contentname."&nbsp;".$record."&nbsp;".$utits."&nbsp;每页 &nbsp;".$this->pagesize."&nbsp;".$utits."&nbsp;第&nbsp;".$this->rs->AbsolutePage()."&nbsp;页/共&nbsp;".$pagecount."&nbsp;页";
+		$str =$contentname."&nbsp;".$record."&nbsp;".$utits."&nbsp;每页 &nbsp;".$this->pagesize."&nbsp;".$utits."&nbsp;第&nbsp;".$this->rs->AbsolutePage()."&nbsp;页/共&nbsp;".$pagecount."&nbsp;页";
 		$str.="&nbsp;&nbsp;&nbsp;&nbsp;";
 		if(!$this->rs->AtFirstPage())
 			$str.="<a href=".$_SERVER['PHP_SELF']."?page=1&parameter1=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class.">首页</a>";

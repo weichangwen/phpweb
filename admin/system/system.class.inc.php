@@ -36,7 +36,86 @@ class ConnDB{
 /*数据库管理类*/
 class AdminDB{
     function ExecSQL($sqlstr,$conn){
+        $sqltype=strtolower(substr(trim($sqlstr),0,6));
+        $rs= $conn->prepare($sqlstr);
+        $rs->execute();
+        if($sqltype=="select"){
+            $array=$rs->fetchAll(PDO::FETCH_ASSOC);
+            if(count($array)==0 || $rs==false){
+                return false;
+            }
+            else{
+                return $array;
+            }
+        }elseif($sqltype=="update"||$sqltype=="insert"||$sqltype=="delete"){
+            if($rs){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    }
+}
+//分页类
+class SepPage{
+    var $rs;
+    var $pagesize;
+    var $nowpage;
+    var $array;
+    var $conn;
+    var $sqlstr;
 
+    function ShowData($sqlstr,$conn,$pagesize,$nowpage){
+        if(!isset($nowpage)||$nowpage==""){
+            $this->nowpage=1;
+        }
+        else{
+            $this->nowpage=$nowpage;
+        }
+        $this->pagesize=$pagesize;
+        $this->conn=$conn;
+        $this->sqlstr=$sqlstr;
+        $this->rs=$this->conn->PageExecute($this->sqlstr,$this->pagesize,$this->nowpage,$this->nowpage);
+        @$this->array=$this->rs->GetRows();
+            if(count($this->array)==0||$this->rs==false)
+                return false;
+            else
+                return $this->array;
+    }
+    function ShowPage($contentname,$utits,$anothersearchstr,$anothersearchstrs,$class){
+        $allrs=$this->conn->Execute($this->sqlstr);
+        $record=count($allrs->GetRows());
+        $pagecount=ceil($record/$this->pagesize);
+        $str=$contentname."&nbsp;".$record."&nbsp;".$utits."&nbsp;每页&nbsp;".$this->pagesize."&nbsp".$utits."&nbsp;第&nbsp;".$this->rs->AbsolutePage()."&nbsp;页/共&nbsp;".$pagecount."&nbsp;页";
+        $str.="&nbsp;&nbsp;&nbsp;&nbsp;";
+        if(!$this->rs->AtFirstPage())
+            $str.="<a href=".$_SERVER['PHP_SELF']."?page=1&parameter1=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class.">首页</a>";
+        else
+            $str.="<font color='#555555'>首页</font>";
+        $str.="&nbsp;";
+        if(!$this->rs->AtFirstPage())
+            $str = "<a herf=".$_SERVER['PHP_SELF']."?page=".($this->rs->AbsolutePage()-1)."&parameter1=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class.">上一页</a>";
+        else
+            $str.="<font color='#555555'>上一页</font>";
+        $str.="&nbsp;";
+        if(!$this->rs->AtLastPage()){
+            $str="<a href=".$_SERVER['PHP_SELF']."?page=".($this->rs->AbsolutePage()+1)."&parameter1=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class.">下一页</a>";
+        }
+        else{
+            $str.="<font color='#555555'>下一页</font>";
+        }
+        $str.="&nbsp";
+        if(!$this->rs->AtLastPage()){
+            $str="<a href=".$_SERVER['PHP_SELF']."?page=".$pagecount."&parameter1=".$anothersearchstr."&parameter2=".$anothersearchstrs." class=".$class."></a>";
+        }
+        else{
+            $str.="<font color='#555555'>尾页</font>";
+        }
+        if(count($this->array)==0||$this->rs==false)
+            return "";
+        else
+            return $str;
     }
 }
 ?>
